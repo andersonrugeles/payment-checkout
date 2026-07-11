@@ -1,11 +1,7 @@
 import axios from 'axios';
 import {Product, Transaction, CardData} from '../types';
 
-import {Platform} from 'react-native';
-
-const API_BASE_URL = Platform.OS === 'android'
-  ? 'http://10.0.2.2:3000'
-  : 'http://localhost:3000';
+const API_BASE_URL = "https://payment-checkout-api.onrender.com"
 
 const api = axios.create({
   baseURL: API_BASE_URL,
