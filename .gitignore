@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.yarn/
+
+# Build
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# React Native
+mobile/ios/Pods/
+mobile/ios/build/
+mobile/android/app/build/
+mobile/android/.gradle/
+mobile/android/build/
+
+# Coverage
+coverage/
+*.lcov
+
+# Misc
+*.log
+tmp/
