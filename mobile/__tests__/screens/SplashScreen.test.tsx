@@ -29,7 +29,7 @@ describe('SplashScreen', () => {
       }
     });
     expect(textContents).toContain('PayFlow');
-    expect(textContents).toContain('Secure Payment Checkout');
+    expect(textContents).toContain('Checkout de Pago Seguro');
   });
 
   it('should navigate to Home after timeout', () => {

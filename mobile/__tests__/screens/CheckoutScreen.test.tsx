@@ -92,7 +92,7 @@ describe('CheckoutScreen', () => {
       );
     });
     const json = JSON.stringify(tree.toJSON());
-    expect(json).toContain('Checkout');
+    expect(json).toContain('Pago');
   });
 
   it('should show back button', () => {
