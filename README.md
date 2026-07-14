@@ -4,6 +4,45 @@ Aplicación de checkout de pago con tarjeta de crédito. Incluye una app móvil 
 
 ---
 
+## 📸 Screenshots — Flujo de la App
+
+### 1. Home de Productos
+Catálogo de productos con filtros por categoría y opción de vista lista/grilla. El usuario puede agregar 1 o N productos al carrito.
+
+<img src="docs/screenshots/home.png" width="300" alt="Home de Productos" />
+
+### 2. Carrito de Compras
+Muestra los productos seleccionados con controles de cantidad (+/-), opción de eliminar y el total a pagar. Incluye el botón para proceder al pago con tarjeta de crédito.
+
+<img src="docs/screenshots/cart.png" width="300" alt="Carrito de Compras" />
+
+### 3. Datos de Tarjeta (Backdrop)
+Formulario en componente backdrop para ingresar los datos de la tarjeta. Incluye validación en tiempo real (algoritmo de Luhn), detección automática de marca (Visa/Mastercard) y validación de fecha de expiración y CVC.
+
+<img src="docs/screenshots/payment-data.png" width="300" alt="Datos de Tarjeta" />
+
+### 4. Resumen del Pago (Backdrop)
+Muestra el resumen con los datos de la tarjeta enmascarada, titular y monto total antes de confirmar.
+
+<img src="docs/screenshots/resumen.png" width="300" alt="Resumen del Pago" />
+
+### 5. Confirmando Pago
+Se procesa la transacción contra la pasarela de pagos. El spinner se mantiene visible durante toda la operación.
+
+<img src="docs/screenshots/confirm-payment.png" width="300" alt="Confirmando Pago" />
+
+### 6. Pago Pendiente
+Si la pasarela responde PENDING, la app consulta automáticamente el estado cada 2.5 segundos hasta obtener el resultado final. También incluye un botón manual para consultar.
+
+<img src="docs/screenshots/pending-payment.png" width="300" alt="Pago Pendiente" />
+
+### 7. Pago Exitoso
+Resultado final mostrando la transacción aprobada con referencia, monto y detalle de productos. El botón "Volver a la tienda" reinicia el flujo.
+
+<img src="docs/screenshots/success-payment.png" width="300" alt="Pago Exitoso" />
+
+---
+
 ## 📱 Estructura del Proyecto
 
 ```
